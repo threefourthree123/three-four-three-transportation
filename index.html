@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Three Four Three Transportation | Ottawa, ON</title>
+  <meta name="description" content="Three Four Three Transportation — reliable rides in Ottawa, ON and surrounding areas. Call 343-988-4464 to book." />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a33;
+      --text:#eef3ff;
+      --muted:#b8c5e6;
+      --brand:#ff8a00;
+      --border:rgba(255,255,255,.12);
+      --shadow: 0 18px 55px rgba(0,0,0,.35);
+      --radius:18px;
+      --max:1100px;
+    }
+   body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:#eef3ff;
+  line-height:1.55;
+
+  background:
+    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+    url("background.jpg") no-repeat center center fixed;
+
+  background-size: cover;
+}
+
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+    header{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(10px);
+      background: rgba(11,18,32,.70);
+      border-bottom:1px solid var(--border);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:14px; padding:12px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      text-decoration:none;
+      min-width: 0;
+    }
+    .brand-title{
+      display:flex; flex-direction:column;
+      min-width: 0;
+    }
+    .brand-title b{font-size:15px; letter-spacing:.2px}
+    .brand-title span{font-size:12px; color:var(--muted)}
+    .logo{
+      width:54px; height:54px;
+      border-radius:14px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      flex: 0 0 auto;
+    }
+    .logo img{
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      display:block;
+    }
+    nav{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
+    nav a{
+      text-decoration:none;
+      font-size:14px;
+      color:var(--muted);
+      padding:8px 10px;
+      border-radius:10px;
+    }
+    nav a:hover{background:rgba(255,255,255,.06); color:var(--text)}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 14px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:700;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.06);
+      color:var(--text);
+      white-space:nowrap;
+    }
+    .btn.primary{
+      background: linear-gradient(135deg, #ff8a00, #ffc14a);
+      border:none;
+      color:#1b1206;
+    }
+    main{padding:32px 0 18px}
+    .grid{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:16px;
+      align-items:stretch;
+    }
+    @media (max-width: 900px){
+      .grid{grid-template-columns:1fr}
+      nav{display:none}
+    }
+    .card{
+      background: rgba(15,26,51,.78);
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:22px;
+    }
+    h1{margin:0 0 10px; font-size:40px; line-height:1.05; letter-spacing:-.7px}
+    p{margin:0 0 14px; color:var(--muted)}
+    .cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .quick .row{
+      padding:14px;
+      border-radius:16px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      margin-bottom:10px;
+    }
+    .quick b{display:block; margin-bottom:4px}
+    section{padding:16px 0}
+    h2{font-size:22px; margin:0 0 10px}
+    .cards{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:12px;
+    }
+    @media (max-width: 900px){ .cards{grid-template-columns:1fr} }
+    .mini{
+      padding:16px;
+      border-radius:16px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.04);
+    }
+    .mini h3{margin:0 0 8px; font-size:16px}
+    .mini p{margin:0; color:var(--muted); font-size:14px}
+    .two{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+    @media (max-width: 900px){ .two{grid-template-columns:1fr} }
+    footer{
+      border-top:1px solid var(--border);
+      padding:22px 0 34px;
+      color:var(--muted);
+      font-size:13px;
+      margin-top:18px;
+    }
+    .small{font-size:13px}
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <div class="logo">
+        <!-- Put logo.png in the same folder as index.html -->
+        <img src="logo.png" alt="Three Four Three Transportation Logo">
+      </div>
+      <div class="brand-title">
+        <b>Three Four Three Transportation</b>
+        <span>ottawa, Ontario</span>
+      </div>
+    </a>
+
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="btn primary" href="tel:+13439884464">Call 343-988-4464</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+    <div class="grid">
+      <div class="card">
+        <h1>Reliable rides, clean vehicles, on-time pickups.</h1>
+        <p>
+          Three Four Three Transportation offers local and long-distance transportation in Ottawa, ON and surrounding areas.
+          Call or email to book a ride or request a quote.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="tel:+13439884464">Call to Book</a>
+          <a class="btn" href="mailto:threefourthreetransport@hotmail.com?subject=Booking%20Request%20-%20Three%20Four%20Three%20Transportation">Email a Booking Request</a>
+        </div>
+
+        <p class="small" style="margin-top:12px; color:var(--muted)">
+          Tip: Include pickup address, destination, date/time, and number of passengers.
+        </p>
+      </div>
+
+      <div class="card quick">
+        <div class="row">
+          <b>Phone</b>
+          <a href="tel:+13439884464">343-988-4464</a>
+        </div>
+        <div class="row">
+          <b>Email</b>
+          <a href="mailto:threefourthreetransport@hotmail.com">threefourthreetransport@hotmail.com</a>
+        </div>
+        <div class="row">
+        </div>
+      </div>
+    </div>
+
+    <section id="services">
+      <h2>Services</h2>
+      <div class="cards">
+        <div class="mini">
+          <h3>Local Transportation</h3>
+          <p>Errands, work, shopping, and daily trips around town.</p>
+        </div>
+        <div class="mini">
+          <h3>Appointments</h3>
+          <p>Reliable pickup and drop-off for scheduled appointments.</p>
+        </div>
+        <div class="mini">
+          <h3>Long-Distance</h3>
+          <p>Comfortable rides to nearby cities and destinations upon request.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="two">
+        <div class="card">
+          <h2>About</h2>
+          <p>
+            Three Four Three Transportation is locally owned and operated by <b style="color:var(--text)">Arnold Santawirya</b>.
+            Our goal is simple: dependable service, clear communication, and a smooth ride from pickup to drop-off.
+          </p>
+        </div>
+        <div class="card" id="contact">
+          <h2>Contact</h2>
+          <p class="small" style="margin-bottom:10px;">Call or email to book:</p>
+          <p style="margin:0 0 8px;"><b>Phone:</b> <a href="tel:+13439884464">343-988-4464</a></p>
+          <p style="margin:0 0 8px;"><b>Email:</b> <a href="mailto:threefourthreetransport@hotmail.com">threefourthreetransport@hotmail.com</a></p>
+            <a href="https://www.google.com/maps/search/?api=1&query=4457%209th%20Line%20Road%2C%20Winchester%2C%20ON%20K0C%202K0" target="_blank" rel="noopener">
+<footer>
+  <div class="wrap">
+    © <span id="y"></span> Three Four Three Transportation. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
